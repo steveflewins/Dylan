@@ -36,34 +36,10 @@ class ViewBathroomViewController: UIViewController {
         
         vehicle_name.text = vehicle
         
-        //   blue_car.isHidden = true
         
-        /*
-         let url = Bundle.main.url(forResource: "vermell", withExtension: "mp3")!
-         
-         do {
-         player = try AVAudioPlayer(contentsOf: url)
-         guard let player = player else { return }
-         
-         //     player.prepareToPlay()
-         //  player.play()
-         }
-         
-         catch let error {
-         print(error.localizedDescription)
-         }
-         */
+        //create an instance of a LearnObject class
         
-        
-        
-        
-        // Do any additional setup after loading the view.
-        // lbl_incorrect.isHidden = true
-        //lbl_bravo.isHidden = true
-        //img_boat_red.isHidden = true
-        //lbl_mes.isHidden = true
-        
-        
+        let myLearnObject = LearnObject()
         
         
     }
@@ -80,7 +56,7 @@ class ViewBathroomViewController: UIViewController {
     @IBAction func play_sound(_ sender: UIButton) {
         
         
-        let url = Bundle.main.url(forResource: "blau", withExtension: "mp3")!
+        let url = Bundle.main.url(forResource: "cotxe", withExtension: "mp3")!
         
         do {
             player = try AVAudioPlayer(contentsOf: url)
